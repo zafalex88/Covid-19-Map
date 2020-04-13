@@ -3,9 +3,6 @@ import csv
 import numpy as np
 import folium
 from folium import *
-import plotly.express as px
-from ipywidgets import interact
-
 
 # loading data from the source:
 deaths = pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv')
