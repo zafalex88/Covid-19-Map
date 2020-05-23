@@ -24,7 +24,7 @@ for i in range(0,len(country)):
         radius=(int((np.log(country.iloc[i,4]+1.00001)))+0.2)*15000,
         color='red',
         fill_color='indigo',
-        tooltip="{0} , {1}".format(country.iloc[i][1], country.iloc[i][4])
+        tooltip="{0} , {1}".format(country.iloc[i][0], country.iloc[i][4])
     ).add_to(corona_map)
     
 corona_map.save('./corona_map.html')
