@@ -11,8 +11,9 @@ country.columns = map(str.lower, country.columns)
 #print(country.to_string())
 # changing column name from country/region to country
 country = country.rename(columns={'country_region': 'country'})
-country = country.drop([68, 116], axis=0)
 
+country = country.drop([48, 104], axis=0)
+print(country.to_string())
 # creating world map using Map class
 corona_map = folium.Map(location=[11,0], tiles="openstreetmap", zoom_start=2, max_zoom = 7, min_zoom = 2)
 # iterate over all the rows of confirmed_df to get the lat/long
